@@ -256,6 +256,7 @@
         box-shadow: 0 0 0 100em rgba(0, 0, 0, 0);
         transform: translate3d(-230px, 0, 0);
         transition: all 0.3s ease-in-out;
+
       }
 
       .menu .smartphone-menu-trigger {
@@ -314,14 +315,18 @@
       <h2>{{request.user.first_name}}</h2>
     </header>
     <ul>
-      <li tabindex="0" class="icon-dashboard"> <a style="color:white; text-decoration:none;"
-          href="/admin-dashboard"><span>Dashboard</span></a> </li>
-      <li tabindex="0" class="icon-customers"> <a style="color:white; text-decoration:none;"
-          href="/admin-doctor"><span>Doctor</span></a></li>
-      <li tabindex="0" class="icon-users"> <a style="color:white; text-decoration:none;"
-          href="/admin-patient"><span>Patient</span></a></li>
-      <li tabindex="0" class="icon-calendar"> <a style="color:white; text-decoration:none;"
-          href="/admin-appointment"><span>Appointment</span></a></li>
+      <a style="color:white; text-decoration:none;" href="/admin-dashboard">
+        <li tabindex="0" class="icon-dashboard"><span>Dashboard</span></li>
+      </a>
+      <a style="color:white; text-decoration:none;" href="/admin-doctor">
+        <li tabindex="0" class="icon-customers"><span>Doctor</span></li>
+      </a>
+      <a style="color:white; text-decoration:none;" href="/admin-patient">
+        <li tabindex="0" class="icon-users"> <span>Patient</span></li>
+      </a>
+      <a style="color:white; text-decoration:none;" href="/admin-appointment">
+        <li tabindex="0" class="icon-calendar"><span>Appointment</span></li>
+      </a>
     </ul>
   </nav>
 
@@ -356,14 +361,14 @@
     <!-- content end-->
 
     <br><br><br><br>
-    <footer>
+    <footer style="position: fixed; bottom:0;width:100%;text-align:center;">
 
       <br>
-      <div class="container">
+      <div class="container" style="width: 100%; margin:0">
         <div class="row">
           <div class="col-md-12 col-sm-12">
             <div style="color:#ffffff;" class="wow fadeInUp footer-copyright">
-              <p>Design Engineering <br>
+              <p>Design Engineering |
                 Team Helpful Hearts </p>
             </div>
           </div>
